@@ -15,7 +15,7 @@ class BlogPostAdapter: androidx.recyclerview.widget.ListAdapter<BlogEntries, Blo
         private val binding: GridViewItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(blogPost: BlogEntries){
-            binding.postContent.text = blogPost.content
+            binding.postContent.text = blogPost.subtitle
             binding.postHeader.text = blogPost.header
             binding.executePendingBindings()
         }
